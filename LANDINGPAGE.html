@@ -1,0 +1,240 @@
+<style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+        font-family: 'poppins' , sans-serif;
+    }
+    body{
+        background: url(BG\ VOLLY\ 4.jpg);
+        height: 100%;
+        background-repeat: no-repeat;
+    }
+    section {
+        position:relative;
+        width: 100%;
+        min-height: 100vh;
+        padding: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    header {
+        position: absolute;
+        top:0;
+        left:0;
+        width:100%;
+        padding:20px 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    header .logo{
+        position: relative;
+        max-width: 110px;
+    }
+    header ul {
+        position:relative;
+        display: flex;
+    }
+    header ul li {
+        list-style:none ;
+    }
+    header ul li a {
+        display: inline-block;
+        color: white;
+        font-weight: 400;
+        margin-left: 40px;
+        text-decoration: none;
+        text-transform: uppercase;
+        
+        
+    }
+    .content{
+        position:relative ;
+        width:100%;
+        display: flex;
+        justify-content: space-between;
+        align-items:center ;
+    }
+    .content .textbox{
+        position: relative;
+        max-width: 600px;
+    }
+    .content .textbox h2{
+        color:#090909;
+        font-size:4em ;
+        line-height: 1.4em;
+        font-weight:500 ;
+    }
+    .content .textbox h2 span {
+        color:#A6CF98;
+        font-size: 1.2em;
+        font-weight: 900;
+    }
+    .content .textbox p {
+        color:#0a0707;
+
+    }
+    .content .textbox a {
+        display: inline-block;
+        margin-top: 20px;
+        padding:8px 20ox;
+        background-color: #000000;
+        color:#fff;
+        border-radius: 40px;
+        font-weight:500;
+        letter-spacing:none;
+        text-decoration: none;
+        width: 150px;
+        padding: 3px 10px ;
+        text-align: center;
+    }
+    .content .textbox a:hover{
+        background: #000000;
+        color:#fff;
+        padding: 3px 10px ;
+        text-align: center;
+    }
+
+    .content .imgbox {
+        width: 600px;
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 50px;
+        margin-top: 50px;
+       
+    }
+    .content .imgbox img {
+        max-width: 380px;
+        background-size: cover;
+        
+    }
+    .thumb {
+        position: absolute;
+        left: 50%;
+        bottom: 20px;
+        transform: translateX(-50%);
+        display: flex;
+
+    }
+    .thumb li{
+        list-style: none;
+        display: inline-block;
+        margin: 0 20px;
+        cursor: pointer;
+        transition:0.5s;
+    }
+    .thumb li :hover{
+        transform: translateY(-15px);
+    }
+    .thumb li img{
+        max-width: 60px;
+    }
+
+    
+    
+    .sci {
+        position: absolute;
+        top: 50%;
+        right: 30px;
+        transform: translateY(-50%);
+        display: flex;
+        justify-content: center;
+        align-items:center ;
+        flex-direction: column;
+    }
+    .sci li {
+        list-style: none;
+    }
+    .sci li  a {
+         display: inline-block;
+        margin: 5px 0;
+        transform: scale(0.6);
+        filter: invert(1);
+    }
+    .circle {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+       
+        clip-path: circle(600px at right 800px) ;
+    }
+    footer {
+  margin-top: 600px;
+  background-color: #498bdb;
+  min-height: 150px;        
+  position: absolute;
+  width: 100%;
+  
+  
+}
+
+footer p {
+  text-align: center;
+  line-height: 90px;
+  color: #000000;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+footer p a {
+  color: #000000;
+  transition: all .3s;
+  position: relative;
+  z-index: 3;
+}
+
+footer p a:hover {
+  opacity: 0.75;
+}
+</style>
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>VOLLY Landing page</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <section>
+            <div class="circle"></div>
+            <header>
+                <a href="#" ><img src="Screenshot_2023-11-15_162952-removebg-preview.png" class="logo"></a>
+                <ul> 
+                    <li><a href="LOGIN.html"><b>Login</b></a></li>
+                    <li><a href="LOGIN.html"><b>Signup</b></a></li>
+                </ul>
+            </header>
+            <div class="content">
+                <div class="textBox">
+                    <h2>Its not just VOLLY<br>it's <span>VOLLYPEDIA</span></h2>
+                    <p>Website ini membuat pengalaman pembelajaran anda lebih menjadi menyenangkan
+                    </p>
+            
+                    <a href="LOGIN.html">Read More</a>
+                </div>
+           
+        </section>
+
+        <script type="text/javascript">
+            function imgslider(anything) {
+                document.queryselctor('.VOLLY').src =anything;
+            }
+            function  changecirclecolor(color){
+                const circle =document.querySelector('.circle');
+                circle.style.background=color;
+            }
+        </script>
+        <footer>
+            <div class="container">
+              <div class="col-lg-12">
+                <p>Copyright © 2023-2025 SMKN 4 Malang. Developed By Moch Naufal Andaffa <A></A>.All rights reserved. &nbsp;&nbsp; <a>Hubungi : andaffanaufal@gmail.com</a></p>
+              </div>
+            </div>
+          </footer>
+    </body>
+</html>

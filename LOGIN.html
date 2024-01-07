@@ -1,0 +1,137 @@
+<style>
+	/* Import Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  min-height: 100vh;
+  width: 100%;
+  background:#4baeae;
+}
+.container{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  max-width: 430px;
+  width: 100%;
+  color: rgb(4, 4, 4);
+  background: #2E97A7;
+  border-radius: 7px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+}
+
+.container .registration{
+  display: none;
+}
+#check:checked ~ .registration{
+  display: block;
+}
+#check:checked ~ .login{
+  display: none;
+}
+#check{
+  display: none;
+}
+.container .form{
+  padding: 2rem;
+}
+.form header{
+  font-size: 2rem;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+ .form input{
+   height: 60px;
+   width: 100%;
+   padding: 0 15px;
+   font-size: 17px;
+   margin-bottom: 1.3rem;
+   border: 1px solid #000000;
+   border-radius: 6px;
+   outline: none;
+ }
+ .form input:focus{
+   box-shadow: 0 1px 0 rgba(0,0,0,0.2);
+ }
+.form a{
+  font-size: 16px;
+  color: #009579;
+  text-decoration: none;
+}
+.form a:hover{
+  text-decoration: underline;
+}
+.form input.button{
+  color: #000000;
+  background:#a6a4a4;
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-top: 1.7rem;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.form input.button:hover{
+  background:#7D7C7C;
+}
+.signup{
+  font-size: 17px;
+  text-align: center;
+}
+.signup label{
+  color: #362FD9;
+  cursor: pointer;
+}
+.signup label:hover{
+  text-decoration: underline;
+}
+
+</style> 
+ 
+ 
+ <!DOCTYPE html>
+<html>
+<head>        
+	<title>Slide Navbar</title>
+	<link rel="stylesheet" type="text/css" href="slide navbar style.css">
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="container">
+		<input type="checkbox" id="check">
+		<div class="login form">
+		  <header>Login</header>
+		  <form action="#">
+			<input type="text" placeholder="Enter your email">
+			<input type="password" placeholder="Enter your password">
+			<a href="homepage.html"><input type="button" class="button" value="Login"></a>
+		  </form>
+		  <div class="signup">
+			<span class="signup">Don't have an account?
+			 <label for="check">Signup</label>
+			</span>
+		  </div>
+		</div>
+		<div class="registration form">
+		  <header>Signup</header>
+		  <form action="#">
+			<input type="text" placeholder="Enter your email">
+			<input type="password" placeholder="Create a password">
+			<input type="password" placeholder="Confirm your password">
+			<a href="login.html"><input type="button" class="button" value="Signup"></a>
+		  </form>
+		  <div class="signup">
+			<span class="signup">Already have an account?
+			 <label for="check"><a href="homepage.html"></a> Login</label>
+			</span>
+		  </div>
+		</div>
+	  </div>
+</body>
+</html>
